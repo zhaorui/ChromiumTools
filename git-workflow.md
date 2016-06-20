@@ -7,15 +7,18 @@ Create your working folder, then get the source code.
 	git clone http://gitlabapp.115rc.com/115browser/src.git
 
 Now, get the dependencies for your platform.
-1. Go to smb or ftp share server then download the dependencies.	 
->For **Windows**, download dep_win.tar.gz
->For **Mac**, download dep_mac.tar.gz
 
-2 . Extract the dependency to your src folder, 
-3 . Download file **.gclient** from FTP or SMB server, and put it to your *~/Chromium*. 
-	Then run 
+* Go to smb or ftp share server then download the dependencies.
+
+	>For **Windows**, download dep_win.tar.gz  
+	>For **Mac**, download dep_mac.tar.gz
+
+* Extract the dependency to your src folder.
+* Download file **.gclient** from FTP or SMB server, and put it to your *~/Chromium*.  
+  Then run 
 	
 		gclient sync --with_branch_heads	
+		
 ##Workflow with Git
 Please make yourself be familiar with below commands, there are plenty of resources about them in the Internet.
 
@@ -75,7 +78,7 @@ Solved merge conflicts if it exists, then push your change to remote.
 	git push origin 115 #if you're push your change
 	
 ####Good articles about rebase work flow
-[A rebase-based workflow](http://unethicalblogger.com/2010/04/02/a-rebase-based-workflow.html)
+[A rebase-based workflow](http://unethicalblogger.com/2010/04/02/a-rebase-based-workflow.html)  
 [Git team workflows: merge or rebase?](https://www.atlassian.com/git/articles/git-team-workflows-merge-or-rebase/)
 
 ##FAQ
