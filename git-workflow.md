@@ -8,14 +8,18 @@ Create your working folder, then get the source code.
 
 Now, get the dependencies for your platform.
 
-* Go to smb or ftp share server then download the dependencies.
-
-	>For **Windows**, download dep_win.tar.gz  
-	>For **Mac**, download dep_mac.tar.gz
-
+* Go to smb or ftp share server. 
+	* For **Windows**, go to \\\\zhaoruis-imac\GitMigrate
+	* For **Mac**, go to smb://zhaoruis-imac.local/GitMigrate
+ 
+* Download dpendencies. ~~Temporarily, the dependencies are managed by svn server, go to **src/115chrome/dependencies/49.0.2623.75** to download~~. 
+	*  For **Windows**, download dep_win.tar.gz  
+	*  For **Mac**, download dep_mac.tar.gz
 * Extract the dependency to your src folder.
-* Download file **.gclient** from FTP or SMB server, and put it to your *~/Chromium*.  
-  Then run 
+* Make sure you deploy your **depot_tools** well in your platform, if not please refer to the chromium documentation [depot_tools setup](https://commondatastorage.googleapis.com/chrome-infra-docs/flat/depot_tools/docs/html/depot_tools_tutorial.html#_setting_up). You can find **depot_tools.zip** in the our share folder.
+* You'd better install [lantern](https://github.com/getlantern/lantern) to your machine, it helps us to go through the GFW(the great fire wall), we still need to download some very small dependencies from the Internet.
+* Download file **.gclient** from share folder, and put it to your *~/Chromium*.  
+  Then run below command, it would fetch 
 	
 		gclient sync --with_branch_heads	
 		
