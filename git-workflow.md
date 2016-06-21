@@ -17,7 +17,11 @@ Now, get the dependencies for your platform.
 	*  For **Mac**, download dep_mac.tar.gz
 * Extract the dependency to your src folder.
 * Make sure you deploy your **depot_tools** well in your platform, if not please refer to the chromium documentation [depot_tools setup](https://commondatastorage.googleapis.com/chrome-infra-docs/flat/depot_tools/docs/html/depot_tools_tutorial.html#_setting_up). You can find **depot_tools.zip** in the our share folder.
-* You'd better install [lantern](https://github.com/getlantern/lantern) to your machine, it helps us to go through the GFW(the great fire wall), we still need to download some very small dependencies from the Internet.
+* You'd better install [lantern](https://github.com/getlantern/lantern) to your machine, it helps us to go through the GFW(the great fire wall), we still need to download some very small dependencies from the Internet. Remember to set the environmental varialbe for proxy.
+
+		export http_proxy=127.0.0.1:8787
+		export https_proxy=127.0.0.1:8787
+
 * Download file **.gclient** from share folder, and put it to your *~/Chromium*.  
   Then run below command, it would fetch 
 	
